@@ -807,6 +807,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -840,6 +845,11 @@ video {
   font-style: italic;
 }
 
+.\!text-brandCyan {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 77 102 / var(--tw-text-opacity)) !important;
+}
+
 .\!text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
@@ -853,11 +863,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.\!text-brandCyan {
-  --tw-text-opacity: 1 !important;
-  color: rgb(0 77 102 / var(--tw-text-opacity)) !important;
 }
 
 .underline {
