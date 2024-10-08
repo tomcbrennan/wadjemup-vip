@@ -1,0 +1,67 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './typography.css';
+@import './buttons.css';
+
+html,
+body:not(.page-privacy) {
+	@apply scroll-smooth overflow-x-hidden;
+}
+
+.container {
+	@apply max-w-[1100px] 2xl:max-w-[1240px] w-full mx-auto px-6 md:px-10;
+}
+
+.inner-py {
+	@apply relative w-full py-10 md:py-16;
+}
+
+/* ACCORDIONS */
+
+.accordion-header {
+	&:hover {
+		@apply !bg-brandDark;
+	}
+
+	&.active {
+		@apply !bg-brandDark;
+
+		img {
+			@apply rotate-180;
+		}
+	}
+}
+
+.accordion-content {
+	transition: max-height 0.6s ease;
+	@apply overflow-hidden max-h-0 px-3;
+}
+
+/* TABS */
+
+[data-tab-content] {
+	animation: fade-in-bottom 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in-bottom {
+	0% {
+		transform: translateY(15px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes scale-in {
+	0% {
+		transform: scale(0.9);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

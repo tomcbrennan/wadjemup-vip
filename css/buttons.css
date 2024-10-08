@@ -1,0 +1,36 @@
+a {
+	@apply w-fit;
+}
+
+.btn {
+	@apply text-brandBlack duration-150 text-lg lg:text-xl bg-brandYellow font-medium w-fit relative rounded-full py-4 px-6 max-sm:w-full flex items-center gap-3 justify-center text-center hover:brightness-90 !important;
+
+	&.btn-secondary {
+		@apply bg-brandLight text-white !important;
+	}
+
+	&.btn-outline {
+		@apply bg-transparent border-[3px] border-brandCyan text-brandCyan hover:bg-brandLight hover:bg-opacity-15 !important;
+
+		&.white {
+			@apply border-white text-white !important;
+		}
+	}
+
+	&:active {
+		@apply scale-95;
+	}
+}
+
+.return-container {
+	@apply mx-auto sticky bottom-0 left-0;
+
+	.return-btn {
+		@apply rounded-b-none rounded-t-[40px] w-full duration-500 z-50 !important;
+		animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.4s both;
+
+		&.active {
+			@apply !translate-y-0;
+		}
+	}
+}

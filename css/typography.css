@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'BentonSans-Medium';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('https://fastly-cloud.typenetwork.com/projects/5118/862_vdef_emp_7a2a.woff2?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff2'),
+	url('https://fastly-cloud.typenetwork.com/projects/5118/862_vdef_emp_7a2a.woff?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff');
+}
+
+@font-face {
+	font-family: 'BentonSans-Regular';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('https://fastly-cloud.typenetwork.com/projects/5118/85e_vdef_e29bf09b24_7a29.woff2?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff2'),
+	url('https://fastly-cloud.typenetwork.com/projects/5118/85e_vdef_e29bf09b24_7a29.woff?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff');
+}
+
+@font-face {
+	font-family: 'BentonSans-Bold';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('https://fastly-cloud.typenetwork.com/projects/5118/864_vdef_e29bf09b24_7a27.woff2?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff2'),
+	url('https://fastly-cloud.typenetwork.com/projects/5118/864_vdef_e29bf09b24_7a27.woff?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff');
+}
+
+@font-face {
+	font-family: 'BentonSans-Light';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('https://fastly-cloud.typenetwork.com/projects/5118/85c_vdef_e29bf09b24_7a28.woff2?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff2'),
+	url('https://fastly-cloud.typenetwork.com/projects/5118/85c_vdef_e29bf09b24_7a28.woff?ddc0ee1b29f22d0bf691ca97fc73962a4cad3c8e') format('woff');
+}
+
+html,
+body {
+	@apply font-normal;
+}
+
+body {
+	@apply text-base md:text-lg;
+}
+
+p {
+	@apply text-brandBlack;
+}
+
+ul {
+	@apply list-disc flex flex-col gap-2 ml-4;
+}
+
+h1,
+.is-h1 {
+	@apply text-4xl lg:text-5xl 2xl:text-6xl font-medium;
+}
+
+h2,
+.is-h2 {
+	@apply text-3xl lg:text-4xl 2xl:text-5xl font-medium;
+}
+
+h3,
+.is-h3 {
+	@apply text-2xl lg:text-3xl 2xl:text-4xl font-medium;
+}
+
+h4,
+.is-h4 {
+	@apply text-xl lg:text-2xl 2xl:text-3xl font-medium;
+}
+
+.block-content {
+	@apply flex flex-col gap-6;
+}
